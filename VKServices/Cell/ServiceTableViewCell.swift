@@ -9,12 +9,14 @@ import UIKit
 
 class ServiceTableViewCell: UITableViewCell {
 
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var serviceIconView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        activityIndicator.startAnimating()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

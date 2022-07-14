@@ -21,9 +21,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BJm-kU-Wce">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="86" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BJm-kU-Wce">
                                 <rect key="frame" x="0.0" y="76" width="414" height="786"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.14625789619999999" green="0.14625789619999999" blue="0.14625789619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.14625789619999999" green="0.14625789619999999" blue="0.14625789619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -55,9 +54,13 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-3K-IEE">
+                                                    <rect key="frame" x="30" y="33" width="20" height="20"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="swN-Sj-w6f" firstAttribute="top" secondItem="fzo-o6-TzU" secondAttribute="top" constant="11" id="BWz-vM-5J6"/>
+                                                <constraint firstItem="8hH-3K-IEE" firstAttribute="centerY" secondItem="swN-Sj-w6f" secondAttribute="centerY" id="Die-3K-hfn"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nK2-wk-FFY" secondAttribute="trailing" constant="20" symbolic="YES" id="GB2-HN-VKR"/>
                                                 <constraint firstAttribute="bottom" secondItem="swN-Sj-w6f" secondAttribute="bottom" constant="11" id="JWS-Bj-tIu"/>
                                                 <constraint firstItem="nui-hY-kHm" firstAttribute="leading" secondItem="swN-Sj-w6f" secondAttribute="trailing" constant="8" symbolic="YES" id="NkN-B0-nrw"/>
@@ -68,10 +71,12 @@
                                                 <constraint firstItem="nui-hY-kHm" firstAttribute="trailing" secondItem="fzo-o6-TzU" secondAttribute="trailingMargin" id="kRN-Mk-3WC"/>
                                                 <constraint firstItem="nui-hY-kHm" firstAttribute="bottom" secondItem="fzo-o6-TzU" secondAttribute="bottomMargin" id="rOn-gY-AsV"/>
                                                 <constraint firstItem="nK2-wk-FFY" firstAttribute="leading" secondItem="swN-Sj-w6f" secondAttribute="trailing" constant="8" symbolic="YES" id="t81-AO-a76"/>
+                                                <constraint firstItem="8hH-3K-IEE" firstAttribute="centerX" secondItem="swN-Sj-w6f" secondAttribute="centerX" id="zo9-Fy-Myw"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.14625789616833029" green="0.14625789616833029" blue="0.14625789616833029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
+                                            <outlet property="activityIndicator" destination="8hH-3K-IEE" id="oo3-wV-YUs"/>
                                             <outlet property="descriptionLabel" destination="nui-hY-kHm" id="y3a-3S-mrU"/>
                                             <outlet property="nameLabel" destination="nK2-wk-FFY" id="I47-i3-SU4"/>
                                             <outlet property="serviceIconView" destination="swN-Sj-w6f" id="Wua-Cc-jdL"/>
@@ -88,7 +93,11 @@
                         <color key="backgroundColor" red="0.14625789616833029" green="0.14625789616833029" blue="0.14625789616833029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oHU-xe-JS6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ZL-Ov-K26"/>
+                            <constraint firstItem="BJm-kU-Wce" firstAttribute="top" secondItem="oHU-xe-JS6" secondAttribute="bottom" constant="8" symbolic="YES" id="6B9-aP-NTf"/>
                             <constraint firstItem="oHU-xe-JS6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Uag-0G-4Bh"/>
+                            <constraint firstItem="BJm-kU-Wce" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="c1w-kj-KFG"/>
+                            <constraint firstItem="BJm-kU-Wce" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dIf-gA-IeD"/>
+                            <constraint firstItem="BJm-kU-Wce" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lCD-bB-Ek3"/>
                         </constraints>
                     </view>
                     <connections>

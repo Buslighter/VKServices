@@ -16,6 +16,7 @@
 		15828B37288085990007137A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15828B35288085990007137A /* LaunchScreen.storyboard */; };
 		15828B3F288087350007137A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15828B3E288087350007137A /* Model.swift */; };
 		15828B4128808B820007137A /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15828B4028808B820007137A /* ServiceTableViewCell.swift */; };
+		15828B4328808D530007137A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15828B4228808D530007137A /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		15828B38288085990007137A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15828B3E288087350007137A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		15828B4028808B820007137A /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		15828B4228808D530007137A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,16 +66,49 @@
 			children = (
 				15828B27288085940007137A /* AppDelegate.swift */,
 				15828B29288085940007137A /* SceneDelegate.swift */,
-				15828B2B288085940007137A /* ViewController.swift */,
-				15828B3E288087350007137A /* Model.swift */,
+				15828B462880B8EE0007137A /* Model */,
+				15828B472880B8F40007137A /* View */,
+				15828B452880B8DD0007137A /* ViewModel */,
 				15828B2D288085940007137A /* Main.storyboard */,
-				15828B4028808B820007137A /* ServiceTableViewCell.swift */,
+				15828B442880B8D40007137A /* Cell */,
 				15828B33288085990007137A /* Assets.xcassets */,
 				15828B35288085990007137A /* LaunchScreen.storyboard */,
 				15828B38288085990007137A /* Info.plist */,
 				15828B30288085940007137A /* VKServices.xcdatamodeld */,
 			);
 			path = VKServices;
+			sourceTree = "<group>";
+		};
+		15828B442880B8D40007137A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				15828B4028808B820007137A /* ServiceTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		15828B452880B8DD0007137A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				15828B4228808D530007137A /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		15828B462880B8EE0007137A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15828B3E288087350007137A /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15828B472880B8F40007137A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15828B2B288085940007137A /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +188,7 @@
 				15828B2C288085940007137A /* ViewController.swift in Sources */,
 				15828B28288085940007137A /* AppDelegate.swift in Sources */,
 				15828B2A288085940007137A /* SceneDelegate.swift in Sources */,
+				15828B4328808D530007137A /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
