@@ -14,6 +14,8 @@
 		15828B32288085940007137A /* VKServices.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15828B30288085940007137A /* VKServices.xcdatamodeld */; };
 		15828B34288085990007137A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15828B33288085990007137A /* Assets.xcassets */; };
 		15828B37288085990007137A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15828B35288085990007137A /* LaunchScreen.storyboard */; };
+		15828B3F288087350007137A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15828B3E288087350007137A /* Model.swift */; };
+		15828B4128808B820007137A /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15828B4028808B820007137A /* ServiceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		15828B33288085990007137A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15828B36288085990007137A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15828B38288085990007137A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15828B3E288087350007137A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		15828B4028808B820007137A /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 				15828B27288085940007137A /* AppDelegate.swift */,
 				15828B29288085940007137A /* SceneDelegate.swift */,
 				15828B2B288085940007137A /* ViewController.swift */,
+				15828B3E288087350007137A /* Model.swift */,
 				15828B2D288085940007137A /* Main.storyboard */,
+				15828B4028808B820007137A /* ServiceTableViewCell.swift */,
 				15828B33288085990007137A /* Assets.xcassets */,
 				15828B35288085990007137A /* LaunchScreen.storyboard */,
 				15828B38288085990007137A /* Info.plist */,
@@ -141,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15828B3F288087350007137A /* Model.swift in Sources */,
+				15828B4128808B820007137A /* ServiceTableViewCell.swift in Sources */,
 				15828B32288085940007137A /* VKServices.xcdatamodeld in Sources */,
 				15828B2C288085940007137A /* ViewController.swift in Sources */,
 				15828B28288085940007137A /* AppDelegate.swift in Sources */,
